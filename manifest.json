@@ -1,0 +1,21 @@
+{
+  "name": "#NoLeak",
+  "version": "0.1",
+  "manifest_version": 3,
+  "description": "Mistakes happen—protect your projects instantly by detecting and hiding exposed API KEYS from major services as you type",
+  "permissions": ["scripting", "webNavigation"],
+  "author": {
+    "name": "Gus Aragón",
+    "email": "gus@oktsec.com"
+  },
+  "icons": {
+    "128": "images/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content-script.js"]
+    }
+  ],
+  "action": {}
+}
